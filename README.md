@@ -22,7 +22,7 @@ This script will download the video of every contents in a YouTube playlist.
 
 ### Json result
 ```json
-result = {
+{
     "Video": {
         "Title": yt.title,
         "ID": yt.video_id,

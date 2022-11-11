@@ -19,3 +19,22 @@ This script will download the video of every contents in a YouTube playlist.
   - e.g. https://www.youtube.com/playlist?list=OLAK5uy_kOhxZJmu14hn8tCliKIFz6-p6D4YKOV3g
 - ``Scrapes destination (optional):`` - must insert the full path
   - e.g. C:\Users\Username\Folder
+
+### Json result
+```json
+result = {
+    "Video": {
+        "Title": yt.title,
+        "ID": yt.video_id,
+        "Length": str(yt.length) + " secs",
+        "Description": yt.description,
+        "Stats": {
+            "Views": yt.views
+        }
+    },
+    "Channel": {
+        "Url": yt.channel_url,
+        "ID": yt.channel_id
+    }
+}
+```
